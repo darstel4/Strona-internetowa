@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test</title>
+  </head>
+<style>
+   body{
+    
+    background-color:aquamarine;
+    margin: 0px auto;
+  }
+  *{
+    color: rgb(13, 9, 9);
+  }
+  p{
+    margin-left: 50%;
+    margin-top: 23%;
+    font-size:xx-large;
+  }
+  .tlumacz,.preview,.nxt{
+    margin-left:48%;
+  }
+ 
+</style>
+  <body>
+
+  <p>Test</p>
+    <button class="tlumacz">Tłumaczenie</button>
+    <button class="preview">Preview</button>
+    <button class="next">Next</button>
+    
+    <script>
+    let tab=['car','samochód','tree','drzewo','road','droga','star','gwiazda'];
+    let p=document.querySelector('p');
+    let button=document.querySelector('button');
+    let next=document.querySelector('.next');
+    let preview=document.querySelector('.preview');
+    p.textContent=tab[0];
+let i=0;
+function wys(){
+  if(i%2==0){
+  i++;
+  p.textContent=tab[i];
+}else {
+  i--;
+  p.textContent=tab[i];
+}
+}
+function wys2(){
+  if(i%2==0){
+  i+=2;
+p.textContent=tab[i];
+}else{
+  i++;
+  p.textContent=tab[i];
+}
+if(i===8){i=0;
+p.textContent=tab[i];
+}
+}
+function wys3(){
+  if(i%2==0){
+  i-=2;
+p.textContent=tab[i];
+}else{
+  i--;
+  p.textContent=tab[i];
+}
+if(i<=0){i=0;
+p.textContent=tab[i];
+}
+}
+
+  button.addEventListener('click',wys);
+next.addEventListener('click',wys2);
+preview.addEventListener('click',wys3);
+
+
+    </script>
+     </body>
+</html>
