@@ -15,26 +15,53 @@
     color: rgb(13, 9, 9);
   }
   p{
-    margin-left: 50%;
+    text-align:center;
+   margin-left: 34%;
     margin-top: 23%;
     font-size:xx-large;
+    border: 1px solid grey;
+    border-width: 20px;
+   width: 34%;
+   background-color:rgb(13, 9, 9);
+   color:aliceblue;
+   border-radius: 50px;
+    
   }
-  .tlumacz,.preview,.nxt{
-    margin-left:48%;
+  .preview{
+    margin-left:35%;
+    border-radius:50px;
+    background-color: rgb(73, 106, 166);
+    font-size: 20px;
+    color:aliceblue;
+  }
+  .tlumacz{
+    margin-left:7%;
+    border-radius:50px;
+    background-color: rgb(73, 106, 166);
+    font-size: 20px;
+    color:aliceblue;
+  }
+  .next{
+    margin-left:7%;
+    border-radius:50px;
+    background-color: rgb(73, 106, 166);
+    font-size: 20px;
+    color:aliceblue;
   }
  
 </style>
   <body>
 
   <p>Test</p>
+  <button class="preview">Preview</button>
     <button class="tlumacz">Tłumaczenie</button>
-    <button class="preview">Preview</button>
+   
     <button class="next">Next</button>
     
     <script>
     let tab=['car','samochód','tree','drzewo','road','droga','star','gwiazda'];
     let p=document.querySelector('p');
-    let button=document.querySelector('button');
+    let button=document.querySelector('.tlumacz');
     let next=document.querySelector('.next');
     let preview=document.querySelector('.preview');
     p.textContent=tab[0];
