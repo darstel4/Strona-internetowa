@@ -14,10 +14,10 @@
   *{
     color: rgb(13, 9, 9);
   }
-  p{
+  .drug{
     text-align:center;
    margin-left: 34%;
-    margin-top: 23%;
+    margin-top: 3%;
     font-size:xx-large;
     border: 1px solid grey;
     border-width: 20px;
@@ -26,6 +26,12 @@
    color:aliceblue;
    border-radius: 50px;
     
+  }
+  .pier{
+    font-size:large;
+    text-align:center;
+    margin-top: 15%;
+    margin-left: 4%;
   }
   .preview{
     margin-left:35%;
@@ -51,8 +57,8 @@
  
 </style>
   <body>
-
-  <p>Test</p>
+<p class="pier">Test</p>
+  <p class="drug">Test</p>
   <button class="preview">Preview</button>
     <button class="tlumacz">Tłumaczenie</button>
    
@@ -60,12 +66,15 @@
     
     <script>
     let tab=['car','samochód','tree','drzewo','road','droga','star','gwiazda'];
-    let p=document.querySelector('p');
+    let p=document.querySelector('.drug');
     let button=document.querySelector('.tlumacz');
     let next=document.querySelector('.next');
     let preview=document.querySelector('.preview');
+    let p2=document.querySelector('.pier');
     p.textContent=tab[0];
+    p2.textContent=1;
 let i=0;
+let a=1;
 function wys(){
   if(i%2==0){
   i++;
@@ -83,9 +92,12 @@ p.textContent=tab[i];
   i++;
   p.textContent=tab[i];
 }
-if(i===8){i=0;
+if(i===tab.length){i=0;
 p.textContent=tab[i];
+a=0;
 }
+a++;
+p2.textContent=a;
 }
 function wys3(){
   if(i%2==0){
@@ -97,7 +109,10 @@ p.textContent=tab[i];
 }
 if(i<=0){i=0;
 p.textContent=tab[i];
+a=2;
 }
+a--;
+p2.textContent=a;
 }
 
   button.addEventListener('click',wys);
