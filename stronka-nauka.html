@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test</title>
+  </head>
+<style>
+   body{
+    
+    background-color:aquamarine;
+    margin: 0px auto;
+    
+  }
+  *{
+    color: rgb(13, 9, 9);
+  }
+  div{
+    display: flex;
+        align-items: center;
+  justify-content: center;
+
+     }
+  .drug{
+    text-align:center;
+    
+    margin-top: 3%;
+    
+    font-size:xx-large;
+    border: 1px solid grey;
+    border-width: 20px;
+  
+   
+   background-color:rgb(13, 9, 9);
+   color:aliceblue;
+   border-radius: 50px;
+   padding-left:20px;
+   padding-right: 20px;
+    
+  }
+  .pier{
+    font-size:1em;
+    text-align:center;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+  .preview{
+    /*margin-left:33%;*/
+    border-radius:50px;
+    background-color: rgb(73, 106, 166);
+    font-size: 1em;
+    color:aliceblue;
+  }
+  .tlumacz{
+    margin-left:4%;
+    border-radius:50px;
+    background-color: rgb(73, 106, 166);
+    font-size: 1em;
+    color:aliceblue;
+  }
+  .next{
+    margin-left:5%;
+    border-radius:50px;
+    background-color: rgb(73, 106, 166);
+    font-size: 1em;
+    color:aliceblue;
+  }
+ .przy{
+  align-items: center;
+ }
+</style>
+  <body>
+<p class="pier">Test</p>
+<div>
+  <span class="drug">Test</span>
+</div>
+  <p></p>
+  <br>
+  <div class="przy">
+       <button class="preview">Preview</button>
+       
+       <button class="tlumacz">Tłumaczenie</button>
+      
+       <button class="next">Next</button>
+      </div>
+  </body>
+    <script>
+    let tab=['car','samochód','tree','drzewo','road','droga','star','gwiazda'];
+    let p=document.querySelector('.drug');
+    let button=document.querySelector('.tlumacz');
+    let next=document.querySelector('.next');
+    let preview=document.querySelector('.preview');
+    let p2=document.querySelector('.pier');
+    p.textContent=tab[0];
+    p2.textContent=1;
+let i=0;
+let a=1;
+function wys(){
+  if(i%2==0){
+  i++;
+  p.textContent=tab[i];
+}else {
+  i--;
+  p.textContent=tab[i];
+}
+}
+function wys2(){
+  if(i%2==0){
+  i+=2;
+p.textContent=tab[i];
+}else{
+  i++;
+  p.textContent=tab[i];
+}
+if(i===tab.length){i=0;
+p.textContent=tab[i];
+a=0;
+}
+a++;
+p2.textContent=a;
+}
+function wys3(){
+  if(i%2==0){
+  i-=2;
+p.textContent=tab[i];
+}else{
+  i--;
+  p.textContent=tab[i];
+}
+if(i<=0){i=0;
+p.textContent=tab[i];
+a=2;
+}
+a--;
+p2.textContent=a;
+}
+
+  button.addEventListener('click',wys);
+next.addEventListener('click',wys2);
+preview.addEventListener('click',wys3);
+
+
+    </script>
+     
+</html>
