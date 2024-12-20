@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Zawartosc ">
+	<title>Pierwsza</title>
+	<meta http-equiv="refresh" content="60">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body style="background:rgb(210, 208, 216)">
+	
+<header style="text-align: center">Angielski</header>
+<!--<nav style="width: 150px; float: left; background-color: rgb(159, 153, 184)">-->
+
+    
+    <div class="side">
+        <button><a id="Powrót"  href="Pierwsza.html">- Powrót</a></button><br>
+Spis treści:<br>
+Testy:<br>
+<a href="B2-C1-C2\PodstronaB2-C1-C2-A.html"> Poziom B2-C1-C2-A</a>
+<a href="B2-C1-C2\PodstronaB2-C1-C2-B.html"> Poziom B2-C1-C2-B</a>
+<a href="B2-C1-C2\PodstronaB2-C1-C2-C.html"> Poziom B2-C1-C2-C</a>
+<a href="B2-C1-C2\PodstronaB2-C1-C2-D.html"> Poziom B2-C1-C2-D</a>
+
+
+</div>
+<div class="side2">
+  
+	<p>Reklamy</p>
+	  
+	  </div>
+<!--</nav>-->
+<article style="text-align: center ; font-size: xx-large">
+
+<p style="padding-left: 5%;">Uczymy się angielskiego</p>
+<div class="form">
+	<label for="guessField">Enter a word: </label><input type="text" id="guessField" class="guessField">
+	<input type="submit" value="Submit" class="guessSubmit">
+	<button class="polski">Polski</button><button class="english" style=" background-color:#ADFF2F">English</button>
+  </div>
+  <section class="preview">
+
+	<p class="guesses"></p>
+
+  </section>
+  <ul class="ul">
+
+  </ul>
+</article>
+
+
+
+
+<p id="da">© copyright 2022 Gepard</p>
+
+
+
+</body>
+<script >
+	let tab = ['abacus','abaft','abandonment','abase','abashed','abate','abattoir','abbey','abbot','abbreviate','abdicate','abdomen',
+	'abduct','aberrant','aberration','abet','abetter','abeyance','abhor','abide','abiding','ability','abject',
+	'abjuration','ablate','ablaze','able-bodied','able rating','able seaman','ably',
+	'constraint','constrict','construct','construction','construction paper','construction site','construction worker','constructive','constructor',
+'construe','consulship','consult',
+'consultancy','consultant','consulting hours','consulting room','consumables',
+'consume','consumer advice','consumer advice centre',
+'consumer','consumer credit','consumer durables',
+'consumer electronic','consumer goods','consumer group','consumerism','consuming','consummate','consummation',
+'consumption','consumptive','contact adhesive','contact lens','contagion','contain','container','container depot','container port',
+'policy of containment','contaminant','contaminate',
+'contemplate','contemporaneity','contemporary','contempt','contemptible',
+'contend','contender','content',
+'contention','contentious','conterminous',
+'contest','contestant','contestation','context','contextualize','contiguous','continence',
+'continent','Continental Divide','Continental Europe','continental quilt','contingency fund','contingency plan','contingent','continual','continuance',
+'continuity announcer','continuity girl','continuum',
+'contort','contortion','contortionist','contour','contour line',
+'contra','contrabass','contrabasson',
+'contraception','contraceptive','contract',
+'contract bridge','contract cleaners','contractile','contraction','contract killer','contract killing','contractor',
+'contractual','contract worker','contradict','contradiction','contradistinction','contraflow','contraindication','contralto','contraption',
+'contrarily','contrariwise','contrary',
+'contrast','contravene','contretemps','contribute','contribution',
+'contributor','con trick','contrite',
+'contrition','contrivance','contrive',
+'control','control character','control column','control freak','controlled','controller','controlling',
+'control panel','controvert','contusion','conundrum','convalescence','convection','convene','convener','convenience food',
+'convenience store','convenient','convent',
+'conventicle','convention','conventioneer','convent school','converge',
+'convergence','to be conversant with sth','conversational',
+'conversationalist','conversationally','converse',
+'conversion','conversion course','conversion disorder','convert','converter','convertibility','convertible',
+'convex','convey','conveyance','conveyancer','conveyancing','conveyor','convict','conviction','conviction politician',
+'convince','convivial','convocation',
+'convoluted','convolvulus','convoy','convulsant','convulse',
+'cony','coo','co-occurrance',
+'cook-chill foods','cooked meats','cooker',
+'cookhouse','cookie cutter','cookie sheet','cook-off','cookout','cooktop','cookware',
+'cool','cool down','cool off','coolant','cool box','cooler','cool-headed','cooling-off period','cooling rack',
+'cooling tower','coolly','coon',
+'coop','coop up','co-op','cooper','cooperative bank',
+'cooperative farm','cooperatively','cooperative society',
+'coopetition','co-opt','coordinate',
+'coordinated','coordinate geometry','coordination','coordinator','coot','cop','cop out',
+'copper','copper-bottomed','copperplate','coppersmith','copper\'s nark','coppice, copse','co-presidency','co-produce','co-property',
+'cop-shop','copy down','copy off',
+'copy out','copybook','copy brief','copycat','copy desk',
+'copy editor','copyholder','copying ink',
+'copying machine','copyist','copy platform',
+'copyread','copyright','copy typist','copywriter','coquetry','cor','coracle',
+'cor anglais','cord','cordage','corded','cordial','cordless','cordon off','cordon bleu','corduroy',
+'corduroy road','core','core curriculum',
+'corer','core skill','co-respondent','core subject','core time',
+'coriander','cork','cork up',
+'corkage','corked','corker',
+'corkscrew','corm','cormorant','corn','cornball','corncob','corncrake',
+'corncrib','corn dog','corn dolly','cornea','corned beef','corner flag','cornering','corner shop','corner stone',
+'cornerways, cornerwise','cornet','corn exchange',
+'cornflower','cornhusking','cornice','Cornish','Cornish pasty',
+'corn meal','corn picker','corn plaster',
+'corn pone','corn poppy','corn salad',
+'corn shock','corn shuck','corn silk','corn starch','cornucopia','corn whisk(e)y','corny',
+'corolla','corollary','corona','coronary','coronary care unit','coronary thrombosis','coronet','corp','corporal',
+'corporate','corporate body','corporate identity',
+'corporate law','corporate raider','corporate tax','corporation','corporation lawyer',
+'corporeal','corporeal hereditaments','corps',
+'corps de ballet','corpse','corpulence',
+'corpus','Corpus Christi','corpuscle','corral','correcting fluid','correctional','corrective',
+'correlate','correlative','correspond','correspondence column','corresponding','corrida','corridor','corridor train','corrigendum',
+'corroborate','corrode','corrosion',
+'corrugated','corrugated iron','corrupt','corruptible','corsage',
+'corsair','corselet','corset',
+'cortege','cortex','corticoid',
+'cortisone','coruscate','cosh','cosign','cosily','cosine','cos lettuce',
+'cosmeceutical','cosmetician','cosmic','cosmic dust','cosmic rays','cosmonaut','cosmos','Cossack','cosset',
+'cossie','cost accountant','cost accounting','cost and freight','cost-effective','costermonger','costing','costive',
+'costliness','costly','cost of living adjustment','cost living allowance','cost of money','cost overrun',
+'cost-plus','cost price','costume drama','costume jewellery','costumier','cosy, cozy','cosy up',
+'cot','cotangent','Cote d\'Azur','cotenant','coterie','coterminous','cottage','cottage cheese','cottage industry',
+'cottage piano','cottage pie','cottaging','cotter','cotton',
+'cotton on','cotton to','cotton up','cotton bud','cotton cake',
+'cotton candy','cotton drill','cotton mill','cotton-picking','cotton reel',
+'cottontail','cotton waste','cotton wool','couch','couchant','couchette',
+'couch potato','cough','cough drop','coulee','couloir','council','council estate','councillor, councillman','councill tax',
+'counsel','counselling','counselling service','counsellor','count',
+'count against','count down','count on','count out','count up',
+'countenance','counter','counteract ','counter-attraction','counterbalance',
+'counter-bid','counterblast','counter-charge','countercheck','counter check/cheque','counter-claim',
+'counter clerk','counter-current','counter-espionage','counterfeit','counterfeiter','counterfoil','counter-inflationary','counter-insurgency','counter-insurgent',
+'counter-intelligence','counter-irritant','countermand','counter-measure','counter-move',
+'counterpane','counterpart','counterpoint','counterpoise','counter-productive',
+'counterpunch','countersign','countersink','counter staff','counter-summit',
+'countervailing','countess','counting house','countless','countrified','countrybred',
+'country bumpkin','country dance','country gentleman','countryman','country mile','country park','country rock','country seat','countryside',
+'countrywide','county','county agent','county council','county seat/town',
+'coup','coup de foudre','coup de grace','coup d\'etat','coupler',
+'couplet','coupling','coupon','courage','courgette',
+'course book','courser','courseware','coursework','coursing','court',
+'court card','court circular','court dress','courteous','courtesan','courtesy call','courtesy coach','courtesy delay','courtesy light',
+'courtesy title','courthouse','courtier','courtly','court-martial',
+'court of appeal','court of inquiry','court of law','Court of Session','Court of St James',
+'court order','court reporter','courtroom','courtship','court shoe',
+'courtyard','cove','coven','covenant','cover for','cover over/in',
+'cover up','coverage','coveralls','cover charge','covered market','covered wagon','cover girl','covering','covering fire',
+'covering letter','coverlet','cover note','cover sheet','cover story',
+'covert','covert coat','covertly','cover-up','cover version',
+'covet','covetous','covey','cow','cowboy',
+'cowcatcher','cower','cowhand','cowherd','cowhide','cowl',
+'cowlick','cowl neck','cowman','co-worker','cowpat','cowpoke','cowpox','cowpuncher','cowshed',
+'cowslip','cox','coxcomb','coxswain','coy',
+'coyly','coypu','corporal','crab','crab apple',
+'crabbed','crabbing','crab louse','crack','crack down',
+'crack up','crack-brained','cracked wheat','cracker','cracker-barrel','crackerjack',
+'crackers','crack factory','crackhead','crack house','crackle','cracknel','crackpot','cradle','he is a cradlesnatcher',
+'craft','craftiness','craftmanship','crag','craggy',
+'cram','crammed','crammer','cramp','cramped',
+'crampon','cranberry','crane','crane forward','crane driver',
+'crane fly','cranial','cranial index','cranium','crank','crank out',
+'crank up','crankcase','crankshaft','cranky','cranny','crap','crape','craps','crapulent',
+'crash','crash barrier','crash course','crash helmet','crash-land',
+'crash pad','crash-test','crash test dummy','crass','crassly',
+'crate','crater','cravat','crave','craven',
+'craving','craw','crawfish','crawl','crawler','crawler lane',
+'crayfish','crayon','craze','crazed','crazily','crazy bone','crazy golf','crazy paving','crazy quilt',
+'creak','cream','cream off','cream cleaner','cream cracker',
+'creamer','creamery','cream puff','cream soda','cream tea',
+'crease','crease up','crease-resistant','creature','creche',
+'credence','credentials','credibility','credibility gap','credit','creditable',
+'credit agency','credit arrangements','credit broker','credit entry','credit hour','creditor','credit rating','credit sale','credit side',
+'credit standing','credit transfer','credit union','creditworthiness','credo',
+'credulity','creed','creek','creel','creep',
+'creep in','creep over','creep through','creep up','creeper',
+'creepy','creepy-crawly','cremation','creme de la creme','crepe, crepe','crepe bandage',
+'crepehanger','crepe paper','crepuscular','crescent','cress','crest','crestfallen','cretaceous','cretin',
+'crevasse','crevice','crewcut','crewman','crew neck',
+'crib','cribbage','crick','cricket','crikey',
+'Crimea','crime desk','crime fighter','crime figures','crime of passion',
+'criminal act','crime assault','criminal bankruptcy','criminal bankruptcy order','criminal case','criminal charges',
+'criminal code','criminal conspiracy','criminal conversation','criminal conviction','criminal court','criminal damage','criminal inquiry','crminality','criminalization',
+'criminal law','criminal liability','criminal libel','criminal negligence','criminal offence',
+'to have a criminal record','Criminal Records Office','crimp','crimson','cringe',
+'cringing','cringe-making','crinkle','crinkly','cripple',
+'crippling','crisis','crisis centre','crisis intervention','crisp','crispbread',
+'crisper','crisply','crispness','crispy','crisscross','crit','criterion, criteria','critical path analysis','critique',
+'critter','croak','croaker','crochet','crochet hook',
+'crock','crocked','crockery','crocus','Croesus',
+'croft','crofter','Crohn\'s disease','croissant','crone',
+'crony','cronyism','crook','crooked','croon','crooner',
+'crop','cropland','cropped','cropper','crop rotation','crop spray','crop sprayer','crop top','croquet',
+'croquette','crosier','cross','cross off','cross out',
+'cross over','cross through','cross action','crossbar','crossbeam',
+'cross-bench','cross-bencher','crossbill','cross-border','crossbow',
+'crossbred','cross-check','cross-compiler','cross-country','cross-court','cross-cultural',
+'crosscurrent','cross-curricular','crosscut','crosscut chisel','crosscut file','crosscut saw','cross-disciplinary','cross-dress','cross-dresser',
+'crosse','cross-examination','cross-eye','cross-fertilization','crossfire',
+'cross-grained','cross hairs','crosshatch','crossing','crossing-out',
+'cross-legged','crossly','crossmatch','crossover','crossover network',
+'cross-party','crosspatch','crosspiece','crossply','cross-pollinate','we are at cross-purposes',
+'cross-question','cross-refer','cross-reference','crossroads','cross-section','cross-shaped','cross-stitch','crosstalk','crosstie',
+'cross-town','crosswalk','crossway','crosswind','crosswise',
+'crossword','crotch','crotchet','crotchet rest','crotchety',
+'crouch','croup','croupier','crouton','crow',
+'crowbar','crowd','crowd around','crownd in','crowd out','crowd together',
+'crowd control','crowd control barrier','crowd-puller','crowd safety','crowd scene','crowd trouble','crowfoot','crowing','Crown Agents',
+'crown cap','crown colony','Crown court','crowned head','crowning',
+'crowning glory','crown jewels','crown lands','crown prince','Crown Prosecution Service, CPS',
+'crown roast','crown saw','Crown servant','crown wheel','crow\'s feet',
+'crow\'s nest','crucial','crucible','crucifix','crucifixion','cruciform',
+'crucify','crud','crude','crudely','crudites','crudity','cruel','cruet','cruise',
+'cruise control','cruise liner','cruise missile','cruiser','cruiserweight',
+'cruising range','cruising speed','cruising yacht','cruller','crumb',
+'crumbling','crumbly','crumbs','crummy','crump',
+'crumpet','crumple','crumple up','crunch','crunch up','crunchy',
+'crupper','crusade','crusader','crusading','crush','crush out','crush up','crushed velvet','crushing',
+'crushingly','crushproof','crust','crustacean','crusty',
+'crutch','crux','cry','cry down','cry off',
+'cry out','crybaby','crying','cryobiology','cryonics',
+'crypt','cryptanalysis','cryptic','crystal','crystal ball','crystal clear',
+'crystal gazing','crystal lattice','crystalline','crystalline lens','crystallize','crystallized','crystal set','crystal therapy','CS gas',
+'carat','cub','Cuban heel','cubby-hole','cube',
+'cube root','cubic capacity','cubicle','cubic measure','Cub pack',
+'cub reporter','cuckold','cuckoo','cucumber','to chew the cud',
+'cuddle','cuddly','cuddly toy','cudgel','cue','cue ball',
+'cue card','cuff','cuff link','cuisine','cul-de-sac','culinary','cull','culminate','culmination',
+'culottes','culpability','culpable','culpable homicide','culpable negligence',
+'culprit','cult','cultbuster','cultivable','cultivar',
+'cultivate','cultivator','culturally','culture','culture-bond',
+'cultured','cultured pearl','culture-fair','culture medium','to be a culture vulture','culvert',
+'cum','cumbersome','cumbrous','cumin','cum laude','cummerbund','cumulative','cumulative action','cumulative evidence',
+'cumulonimbus','cumulus','cuneiform','cunnilingus','cunning',
+'cunningly','cunt','cup','cupbearer','cupboard',
+'cupboard love','cupboard space','cupcake','cupful','cupid',
+'cupidity','cupola','cuppa','cupping glass','cupric','cupronickel',
+'cup tie','cur','curable','curate','curative','curator','curb','curb service','curbstone',
+'curb weight','curds','curd cheese','curdle','cure',
+'cure-all','curettage','curfew','Curia','curing',
+'curio','curiosity','curl','curl up','curler',
+'curlew','curlicue','curling rink','curling tongs','curlpaper','curly',
+'curly kale','curly lettuce','curmudgeonly','currant','currency','currency converter','current','current account','current affairs',
+'current assets','current liabilities','currently','curriculum','curriculum vitae',
+'curry','curry comb','curse','cursive','cursorily',
+'curt','curtail','curtain','curtain call','curtain pole',
+'curtain raiser','curtsy','curvaceous','curvature','curve','curvilinear',
+'curvy','cushion','cushy','cusp','cuspidor','cuss','cussedness','cussword','custard',
+'custard cream','custard pie','custodial sentence','custodian','custody',
+'custom','customary','customer','customer careline','customs',
+'Customs and Excise','customs border patrol','customs clearance','customs duties','customs hall',
+'customs house','customs inspection','customs officer','customs official','customs post','customs service',
+'customs shed','cut','cut across','cut along','cut at','cut away','cut back','cut down','cut in',
+'cut out','cut through','cut short','cut up','cut-and-dried',
+'the cut and thrust of debate','cutaneous','cutaway','cutback','cute',
+'cutesy','cut glass','cuticule','cutie','cutler',
+'cutlery','cutlet','cut-off','cut-off date','cut-off point','cut-out',
+'cut-price, cut-rate','cutter','cutter bar','cut-throat','cut-throat razor','cutting','cutting board','cutting disc','cutting edge',
+'cuttingly','cutting room','cuttings library, cuttings service','cuttlefish','cv, curriculum vitae',
+'cyan','cyanide','cybercafe','cybercitizen','cybernaut',
+'cybersquatting','cyberstalker','cybrarian','cyclamen','cycle',
+'cycle clip','Cycling Proficiency Test','cycling shorts','cyclo-cross','cyclone','Cyclops',
+//DDDDDDDDDDD
+'dab','dabs','dab at','dab off','dab on','dabble','dabble in','dabbler','dabchick',
+'dace','dacha','dachshund','dactyl','daddy',
+'daddy-long-legs','dado','Dad\'s army','Daedalus','daff, daffodil',
+'daffy','daft','dagger','dago','dahlia',
+'Dail Eireann','daintily','daintiness','dainty','dairy','dairy butter',
+'dairy cattle','dairy cream','dairy farm','dairy ice cream','dairymaid','dais','daisy','daisy wheel','dale',
+'dalliance','dally','dam','damage','damageable',
+'damaging','Damascus','damask','dame','dame school',
+'damfool','dammit','damn','damnable','damnably',
+'damnation','the damned','to do one\'s damnedest (for sb)','damp','damp down','damp-dry',
+'dampen','damper','damp-proof','damp(-proof) course','damp squib','damsel','damselfly','damson','dan',
+'dance floor','dance hall','dance notation','dance programme','dance step',
+'dancing','D and C=dilation and curettage','dandelion','to get sb\'s dander up','dandified',
+'dandle','dandruff','dandy','dang','on the danger list',
+'danger money','danger signal','dangle','Danish pastry','dank','the Danube',
+'Danzing','daphnia','dapper','dapple','dappled','dapple-grey','like Darby and Joan','dare','daredevil',
+'daring','dark age','dark-complexioned','the Dark Continent','darken',
+'darkroom','dark-skinned','darky','darling','darn',
+'darning','dart','darting','dash','dashboard',
+'dashed','dashiki','dashing','dastardly','data','data acquisition'];
+
+
+
+
+
+// test C 76,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115 
+// test D 1,2,3,4
+	let tabpol = ['liczydło','za','opuszczenie','poniżyć się','speszony, zmieszany','obniżyć, przycichnąć','rzeźnia, ubojnia','opactwo',
+	'opat','skrócić','zrzekać się','brzuch','uprowadzić','dziwny','aberracja, odchylenie',
+	'podżegać','współsprawca','być w zawieszeniu','czuć odrazę','znieść','nieprzemijający, trwały','umiejętność','opłakany, nędzny',
+	'wyrzeczenie się','usunąć','płonący, w ogniu','silny, krzepki','patent','mat','z talentem, zręcznie',
+	'ograniczenie, przymus','uciskać','konstrukcja','budowa','karton','plac budowy','robotnik budowlany',
+'konstruktywny','budowniczy, konstruktor','zrozumieć',
+'urząd konsula','poradzić się (kogoś), skonsultować się (z kimś)','doradztwo, stanowisko lekarza specjalisty','doradca, lekarz specjalista (najwyższego stopnia)',
+'godziny przyjęć',
+'gabinet lekarski','towary konsumpcyjne','zjadać','porady dla konsumentów','urząd ochrony praw konsumenta',
+'konsument','kredyt konsumpcyjny','artykuły trwałego użytku',
+'elektronika użytkowa','towary konsumpcyjne','stowarzyszenie konsumentów','konsumpcjonizm','nieposkromiony','wytrawny, doskonały','spełnienie, ukoronowanie',
+'spożycie','suchotnik','klej kontaktowy','soczewka kontaktowa','zarażenie','zawierać','pojemnik, kontener',
+'skład kontenerów','terminal kontenerowy','polityka powstrzymania ekspansji komunizmu',
+'substancja zanieczyszczająca','zanieczyścić','rozważyć','jednoczesność','rówieśnik, współczesny',
+'pogarda','godny pogardy','twierdzić, walczyć','zawodnik','zawartość, zadowolenie',
+'twierdzenie, spór','kontrowersyjny, kłótliwy','sąsiadujący, wspólny',
+'konkurs, zawody','zawodnik, przeciwnik, kandydat','zaskarżenie','kontekst','rozpatrzeć w szerszym kontekscie','graniczący, sąsiadujący','wstrzemięźliwość',
+'kontynent, kontrolujący czynności fizjologiczne','dział wodny tworzony przez Góry Skaliste','kontynent europejski','kołdra','rezerwa budżetowa',
+    'plan awaryjny','grupa, lobby, kontyngent, przypadkowy',
+'ciągły','trwanie','prezenter telewizyjny',
+'sekretarka planu','kontinuum','powykrzywiać','grymas','człowiek-guma',
+'kontur , zarys','poziomica','bojownik','kontrabas','kontrafagot',
+'antykoncepcja','środek antykoncepcyjny','kontrakt, umowa',
+'brydż','firma wynajmowana do sprzątania','kurczliwy','kurczenie się, regres, zarażenie się','płatny morderca','zabójstwo na zlecenie','przedsiębiorca, rozgrywający (in bridge)',
+'wynikający z umowy','robotnik najemny','zaprzeczyć','sprzeczność','przeciwieństwo','dwukierunkowy','przeciwskazanie',
+'kontralt','ustrojstwo','przekornie',
+'odwrotnie','przeciwieństwo (2)','kontrast, przeciwieństwo, różnić się','naruszyć','niezręczna sytuacja',
+'wpłacić, przyczynić się do czegoś','składka','ofiarodawca','kant, szwindel','skruszony',
+'żal za grzechy, skrucha','urządzenie, podstęp, pomysłowość, inwencja','zaaranżować',
+'władza','znak sterujący','drążek sterowy','osoba lubiąca rządzić innymi','opanowany','dyrektor (Radio, Tv)','nadzorujący',
+'deska rozdzielcza','zakwestionować, polemizować','stłuczenie','zagadka','rekonwalescencja','konwekcja','zwołać, zebrać',
+'organizator zebrania','dania gotowe, konserwy','sklep ogólnospożywczy (zazwyczaj całodobowy)',
+'dogodny, wygodny','klasztor żeński','tajne zgromadzenie sekty religijnej','kongres, zjazd','uczestnik zjazdu',
+'szkoła prowadzona przez siostry zakonne','zbiegać się, łączyć się','zbieżność','doskonale coś znać','gawędziarski',
+'rozmówca','swobodnym tonem','odwrotność, porozmawiać',
+'przetwarzanie, zamiana czegoś na coś','program na okres przejściowy','histeria konwersyjna','konwertyta, przerobić','prostownik','zamienność','kabriolet, rozkładany',
+'wypukły','przekazać, wyrazić','przewóz, środek lokomocji','notariusz','przeniesienie tytułu własności','przenośnik taśmowy, przewoźnik','więzień, uznać za winnego',
+'skazanie','polityk zaangażowany ideowo','przekonać',
+'towarzyski, wesoły','zwołanie zebrania','zawiły, esy-floresy','powój','konwój',
+'środek wywołujący drgawki','wstrząsnąć','skórka królicza, królik','gruchanie','współwystępowanie',
+'dania gotowe mrożone','wędliny','kuchenka',
+'kuchnia polowa','foremka do wykrawania ciasteczek','blacha do pieczenia','konkurs kulinarny','przyjęcie z grillem','płyta kuchenna','przybory kuchenne',
+'chłód, spokój','ostygnąć','ochłodzić się','chłodziwo','lodówka turystyczna','(prison) paka','opanowany',
+'okres, w którym strony mogą odstąpić od umowy','kratka pod gorące naczynia','chłodnia kominowa',
+'chłodno ozięble, jak gdyby nigdy nic','szop, czarnuch','kojec, klatka, zamknąć','uwięźić','mieszkanie spółdzielcze',
+'bednarz','bank spółdzielczy','rolnicza spółdzielnia produkcyjna','wspólnie','spółdzielnia',
+'współpraca połączona z współzawodnictwem','przyjąć, pozyskać, wchłonąć','współrzędna',
+'skoordynowany','geometria analityczna','koordynacja','koordynator','łyska, głupiec','glina, gliniarz, przyłapać, ','wymigać się',
+'miedź,gliniarz','[investment] pewny','miedzioryt','kotlarz','kapuś','młodnik, zagajnik','współ-prezesura',
+'wspólnie wyprodukować','współwłasność','posterunek policji',
+'przepisać','odpisać','przepisać (2)','zeszyt do ćwiczeń z kaligrafii','brief reklamowy',
+'papuga','dział opracowywania rękopisów','adiustator','pomocnik korektora','farba drukarska',
+'fotokopiarka','naśladowca, fałszerz','platforma reklamy',
+'zadiustować','prawo autorskie','maszynistka','autor tekstów reklamowych','kokieteria, zalotność','o kurczę!','łódka z impregnowanego materiału rozpiętego na szkielecie z wikliny ',
+'rożek angielski','sznurek','olinowanie','prążkowany','syrop owocowy, serdeczny','bezprzewodowy','zamknąć kordonem',
+'wykwintna kuchnia','sztruks','droga utwardzona okrąglakami',
+'ogryzek, sedno, rdzeń, jądro','minimum programowe','wydrążacz do jabłek','umiejętność podstawowa','współpozwany w sprawie o zdradę małżeńską',
+'przedmiot obowiązkowy','godziny obowiązkowe','kolendra','korek, spławik','zakorkować',
+'korkowe (opłata pobierana od klientów za prawo wypicia przyniesionego ze sobą alkoholu','[person] zalany','kapitalna historia',
+'korkociąg','bulwa','kormoran','zboże, ziarno, kukurydza','poczciwiec','kolba kukurydzy','derkacz',
+'silos do składowania kukurydzy','parówka w cieście(z mąki kukurydzianej)','słomiana kukła','rogówka','wołowina peklowana w puszce',
+    'chorągiewka narożnikowa','pokonywanie zakrętu',
+'pobliski sklepik','kamień węgielny','po przekątnej',
+'rożek waflowy','giełda zbożowa','chaber','łuskanie kukurydzy','gzyms, karnisz',
+'Kornwalijczycy','pasztecik z nadzieniem z mięsa i warzyw','mąka kukurydziana','maszyna do zbioru kukurydzy','plaster na odciski',
+'chleb z mąki kukurydzianej','mak polny','roszpunka jadalna',
+'snop zboża','pochwa liściowa kukurydzy','wąsy kukurydzy','mąka kukurydziana','róg obfitości','bourbon','oklepany, kiepski',
+'korona kwiatu','następstwo','korona','zawał(serca)','odział intensywnej opieki kardiologicznej','zator tętnicy wieńcowej','korona, diadem',
+'kapral','cielesny','wspólny',
+'osoba prawna','tożsamość firmy','statut przedsiębiorstwa','inwestor drapieżca','podatek od osób prawnych',
+'korporacja, brzuszek, komunalny','radca prawny','cielesny, fizyczny, materialny','dobra materialne podlegające dziedziczeniu','korpus',
+'zespół baletowy (z wyjątkiem solistów)','zwłoki, trup','tusza, otyłość',
+'ogół tekstów','Boże Ciało','krwinka','zagroda, otaczać','korektor w płynie','więzienny','korygujący',
+'skorelować, zestawić','powiązany','zgodzić się, odpowiadać, korespondować','dział listów','odpowiedni, analogiczny','korrida','korytarz',
+'pociąg z przedziałami','errata','potwierdzić',
+'spowodować korozję','korozja','pofałdowany','blacha stalowa falista','skorumpowany',
+'przekupny','bukiecik (przypinany do sukienki)','korsarz','pancerz','gorset ortopedyczny',
+'kondukt pogrzebowy','kora','kortykosteroid',
+'kortyzon','skrzyć się','pała, pałka','być konsygnariuszem (czegoś)','wygodnie, przytulnie','kosinus','sałata rzymska',
+'kosmetyk opracowany z wykorzystaniem najnowszych zdobyczy dermatologii','kosmetyczka','kosmiczny','pył kosmiczny','promieniowanie kosmiczne',
+    'kosmonauta','kosmos, wszechświat','Kozak','rozpieszczać, chronić','kostium, kąpielówki',
+'kalkulator','kalkulacja kosztów','koszt i fracht','opłacalny','straganiarz','kalkulacja kosztów','cierpiący na zaparcie','wysokie koszty','kosztowny','indeksacja płac',
+'dodatek drożyźniany','oprocentowanie pieniądza','przekroczenie budżetu','koszty plus marża','cena po kosztach własnych','sztuka kostiumowa','sztuczna biżuteria','osoba sprzedająca/wypożyczająca stroje balowe i kostiumy teatralne',
+'przytulny','przymilać się',
+'łóżeczko dziecinne','cotangens','Lazurowe Wybrzeże','współlokator','koteria','graniczący','domek',
+'twaróg, twarożek','chałupnictwo',
+'małe pianino','zapiekianka z mielonego mięsa i ziemniaków','szukanie partnerów seksualnych w toaletach publicznych','dzierżawca, przetyczka','bawełna',
+'skapować, załapać','polubić','przymilać się','wacik na patyczku','pasza ze sprasowanych wytłoków bawełnianych',
+'wata cukrowa','drelich bawełniany','przędzalnia bawełny','cholerny, przeklęty','szpulka nici',
+'królik amerykański','czyściwo','wata','kanapa','zwierzę w pozycji leżącej','kuszetka',
+'leniwiec','kaszel','pastylka na kaszel','wąwóz','żleb','rada','osiedle domów komunalnych',
+'radny','podatek lokalny','rada, doradzić','pomoc psychologa','psycholog szkolny','doradca','liczenie, hrabia',
+'działać na niekorzyść kogoś','odliczać','liczyć na kogoś/coś','odliczać (2)','podliczyć',
+'oblicze twarzy','anty-, lada, bufet, licznik, napiętek, odeprzeć','przeciwdziałać (czemuś)','konkurencja','przeciwwaga',
+'kontrpropozycja','riposta','kontroskarżenie','weryfikacja','czek kasowy','roszczenie wzajemne',
+'kasjer','prąd przeciwny','kontrwywiad','falsyfikat','fałszerz','odcinek kontrolny','antyinflacyjny',
+'tłumienie rewolty','pacyfikator','kontrwywiad (2)','środek powodujący łagodny odczyn zapalny','odwołać','środek zaradczy','kontrakcja',
+'narzuta, kapa','odpowiednik, kopia','kontrapunkt','przeciwwaga','przynoszący efekt przeciwny do zamierzonego',
+'kontra','hasło','nawiercić','kasjerzy','równoległe spotkanie na szczycie',
+'wyrównujący','hrabina','rachuba','niezliczony','wiejski','urodzony i wychowany na wsi',
+'wsiok','taniec ludowy','ziemianin','rodak, mieszkaniec wsi','szmat drogi','tereny rekreacyjne','skała macierzysta',
+'wiejska rezydencja','krajobraz, wieś, wiejska okolica','ogólnokrajowy','hrabstwo','doradca do spraw rolnictwa','władze samorządowe hrabstwa','stolica hrabstwa (powiatu)',
+'zamach stanu, wyczyn','grom z jasnego nieba','ostateczny cios','zamach stanu (2)','łącznik',
+'dwuwiersz','sprzężenie','bon, talon','odwaga','cukinia',
+'podręcznik','myśliwy','programy i materiały edukacyjne','praca okresowa','polowanie z psami','gmach sądu, dwór, kort, boisko',
+'figura w (kartach)','kronika dworska','strój dworski','uprzejmy','kurtyzana','wizyta kurtuazyjna','hotelowy autobus (kursujący na lotnisko)',
+'światło z opuźnionym wyłącznikiem','wewnętrzne oświetlenie','tytuł honorowy','gmach sądu, budynek administracji hrabstwa','dworzanin','uprzejmy, dworski','sąd wojskowy',
+'sąd apelacyjny','komisja śledcza','sąd','najwyższy sąd cywilny w Szkocji','dwór św. Jakuba (oficjalna nazwa dworu angielskiego)',
+'nakaz sądowy','protokolant/ka sądowa','sala sądowa','starania o rękę, zaloty','czółenko, pantofel',
+'dziedziniec, podwórze','zatoczka, wąwóz, gość','sabat czarownic','umowa, ugoda','zastąpić','przykryć',
+'ubrać się, ukrywać prawdę','relacja, sprawozdanie, zakres działalności','kombinezon, ogrodniczki','opłata za wstęp','hala targowa','furgon','dziewczyna z okładki',
+'pokrycie, powłoka','osłona ogniowa','list przewodni','narzuta, kapa','nota pokrycia','pismo przewodnie','artykuł pierwszej strony, przykrywka, wymówka',
+'gąszcz, zarośla','kurtka myśliwska','potajemnie','próba zatuszowania faktów','nowe wykonanie',
+'pragnąć (czegoś)','chciwy, pożądliwy','stado kuropatw','krowa, zastraszyć','kowboj, partacz',
+'zgarniacz','skulić się (ze strachu)','oborowy','pasterz','skóra wołowa','kaptur',
+'kosmyk opadający na czoło','szeroki golf','mężczyzna dogladający krów','współpracownik','krowi placek','kowboj','ospa krowia',
+'kowboj (2)','obora','pierwiosnek','być sternikiem','fircyk','sternik','wstydliwy',
+'z fałszywą skromnością','nutria','kapral','krab, spaprać, biadolić','dzika jabłoń',
+'opryskliwy','łowienie krabów','wesz łonowa','pęknięcie, rysa','rozprawić się (z czymś)',
+'sfiksować','zwariowany, stuknięty','śruta pszenna','krakers, petarda, biały nędzarz, cizia','domorosły','pierwszorzędny',
+'stuknięty','nielegalne laboratorium kokainy','kokainista','meta (gdzie można nabyć kokainę)','trzaski, zaszeleścić, zaskwierczeć','herbatnik, skwarki'
+    ,'świr, zwariowany','kołyska','on lubi młode dziewczyny','rzemiosło, chytrość, ','chytrość','kunszt, mistrzostwo','grań','skalisty',
+'wepchnąć','zagracony','kujon','skurcz, klamra ciesielska, zahamować','ciasny, ścisły',
+'(Sport) raki','żurawina','żuraw','wyciągnąć szyję','operator dźwigu',
+'komarnica','czaszkowy','wskaźnik antropologiczny','czaszka','maniak, fanatyk','wyprodukować',
+'uruchamiać korbą','skrzynia korbowa','wał korbowy','zbzikowany, stuknięty','szczelina','pierdoły, bzdety, gówno, nasrać','krepa',
+'amerykańska gra hazardowa w kości','nietrzeźwy','łomot, wypadek, awaria, rozbić','bariera bezpieczeństwa','intensywny kurs','kask','wylądować awaryjnie',
+'kąt do spania','przeprowadzić test wypadkowy','manekin używany do testów wypadkowych','prostacki','po chamsku',
+'skrzynka','krater, lej','fular','łaknąć','tchórzliwy',
+'głód, pragnienie','wole, żołądek (u zwierząt)','wycofać się rakiem','kraul, pełzać','lizus, glizda, wyszukiwarka','pas ruchu dla pojazdów jadących wolno',
+'rak, langusta','kredka','moda, szał','oszalały','szalony','czułe miejsce (W łokciu)','mini-golf',
+'ścieżka z płyt o nieregularnych kształtach','kołdra patchworkowa','skrzypnięcie','śmietanka, pasta, krem','zgarnąć','mleczko do czyszczenia','krakers',
+'dzbanuszek do śmietanki','mleczarnia','ptyś, mięczak','napój gazowany o zapachu waniliowym','podwieczorek',
+'zagięcie','zaśmiewać się','niegniotący','istota żywa','żłobek',
+'wiara','kwalifikacje','wiarygodność','rozziew pomiędzy słowami a rzeczywistością','uznanie','godziwy, przyzwoity',
+'agencja badająca zdolność kredytową klienta','warunki kredytu','makler finansowy','zapis po stronie \'ma\'','punktowana godzina zajęć','wierzyciel','zdolność kredytowa',
+'sprzedaż na kredyt','strona "ma"','wypłacalność','przelew środków','spółdzielcza kasa pożyczkowa','zdolność kredytowa (2)','wyznanie wiary, kredo',
+'łatwowierność','wyznanie','zatoka, strumień','kosz (na ryby, do łowienia homarów)','wazeliniarz, menda, skradać się, pełzać, płożyć się',
+'wkraść się','ogarnąć','przedrzeć się','rosnąć stopniowo','liana, pnącze',
+'odrażający','robal','kremacja','śmietanka','opaska żałobna, krepa','bandaż',
+'czarnowidz','krepina','zmierzchowy','półksiężyc','rzeżucha','grzebień, grań, wspiąć się na','zawiedziony',
+'kredowy','kretyn','szczelina lodowa','szczelina, pęknięcie','fryzura na jeża','członek załogi','wycięcie pod szyją',
+'łóżeczko dziecinne, żłób, sciąga','gra w karty dla dwóch osób','bolesny kurcz','świerszcz, krykiet','o rety!',
+'Krym','wydział spraw kryminalnych','policjant zajmujący się zwalczaniem przestępczości','statystyka przestępczości','zbrodnia w afekcie',
+'czyn przestępczy','napaść czynna','bankrutctwo w wyniku kary sądowej','orzeczenie bankrutctwa w wyniku kary sądowej','sprawa karna','zażuty, oskarżenia',
+'kodeks karny','zmowa przestępcza','cudzołówstwo','skazanie','sąd karny','poważne szkody','dochodzenie, śledztwo',
+'przestępczość','uznanie za niezgodne z prawem','prawo karne','odpowiedzialność karna','oszczerstwo','zanidbanie karane sądownie','przestępstwo karne',
+'mieć kryminalną przeszłość','centralny rejestr skazanych','karbować, przymarszczyć','szkarłat','skulić się',
+'służalczy','żenujący','zmarszczka','drobne loczki','kaleka',
+'wyniszczający','kryzys','sztab antykryzysowy','doraźne działania interwencyjne','chips, kruchy, rześki, rzeczowy','pieczywo chrupkie',
+'pojemnik na owoce i warzywa (w lodówce)','elegancko','kruchość','chrupiący, kruchy','siatka, sieć','opracowanie krytyczne','kryterium',
+'opracowanie ścieżki krytycznej','opracowanie krytyczne (2)','stworzenie, istota','rechot, wykitować (die)','panikarz','szydełkowanie','szydełko',
+'grat, gruchot','urżnięty','naczynia stołowe','krokus','krezus, wielki bogacz',
+'zagroda','zagrodnik','choroba Leśniowskiego i Crohna','rogalik francuski','starucha, wiedźma',
+'kumpel, koleś','kumotwerstwo','oszust, zakręt, zgięcie, chory','zakrzywiony','zanucić','piosenkarz',
+'uprawa, plon','ziemia uprawna','krótko ostrzyżony','odmiana uprawna','płodozmian','pestycyd','opryskiwacz',
+'krótka bluzeczka do talii','krokiet','krokiet (2)','pastorał','krzyż, rozgniewany, przekroczyć, skrzyżować, dośrodkować','skreślić','wykreślić',
+'przejść','przekreślić','powództwo wzajemne','poprzeczka','poprzecznica',
+'ława dla posłów niezależnych','poseł niezależny','krzyżodziób','(przy)graniczny','kusza',
+'mieszaniec, hybryda','weryfikacja','kompilator skrośny','bieg przełajowy','po przekątnej kortu','międzykulturowy',
+'prąd przeciwny','wielokierunkowy','przecięcie','wycinak','pilnik o nacięciu krzyżowym','piła poprzeczna','interdyscyplinarny',
+'ubrać się jak kobieta/mężczyzna','transwestyta','rakieta do gry w lacrosse','krzyżowy ogień pytań','zez','krzyżowanie, hybrydyzacja','ogień krzyżowy',
+'zrzędliwy','krzyż or siatka nitek','zakreskować','przeprawa, skrzyżowanie','wykreślenie',
+'siedzący po turecku','ze złością','przeprowadzić próbę krzyżowa','rozjazd','zwrotnica',
+'popierany przez kilka partii','sekutnica, złotnik','element poprzeczny','opona diagonalna','zapylić krzyżowo','nie rozumiemy się',
+'brać(Kogoś) w krzyżowy ogień pytań','odesłać (to sth do czegoś)','odnośnik','skrzyżowanie dróg','przekrój poprzeczny','w kształcie krzyża','ścieg krzyżykowy',
+'pojedynek na słowa','podkład kolejowy','przecinający miasto','przejście dla pieszych','skrzyżowanie','wiatr boczny','ukośny',
+'krzyżówka','krocze, krok','ćwiartka','pauza ćwirćnutowa','zrzędny, marudny',
+'przysiad, kucki','zad','krupier','grzanka','wrona, pianie',
+'łom','tłum','zgromadzić się','wcisnąć się do środka','wyprzeć','stłoczyć się',
+'panowanie nad tłumem','bariera zabezpieczająca','(wielka) atrakcja','bezpieczeństwo zgromadzeń','scena zbiorowa','zajścia','jaskier',
+'pianie, gaworzenie, przechwałki','agencja międzynarodowej pomocy finansowej i handlowej','kapsel','kolonia koronna','Sąd Koronny','koronowana głowa','koronacja',
+'szczytowe osiągnięcie','klejnoty koronne','domeny królewskie','następca tronu','Prokuratura',
+'pieczone żeberka','piła walcowa','urzędnik/urzedniczka państwowa','koło zębate tarczowe','kurze łapki',
+'bocianie gniazdo','decydujący','tygiel, ciężka próba','krucyfiks','ukrzyżowanie','w kształcie krzyża',
+'ukrzyżować','paskudztwo, menda','ropa naftowa, prymitywny','prosto, ordynarnie','surowa warzywa podawane przed osiłkiem','grubiaństwo','okrutny',
+'flaszeczka, ampułka','rejs wycieczkowy','ogranicznik prędkości','statek wycieczkowy','pocisk samosterujący dalekiego zasięgu','krążownik, radiowóz','waga do 86,2 kg',
+'zasięg na prędkości przelotowej','stała prędkość jazdy','jacht morski wycieczkowy','pączek (w kształcie obwarzanka)','okruch, okruszynka',
+'ruina, upadek','wapniak, kruszący się','do diaska','nędzny, lichy','bum, pocisk artyleryjski',
+'racuszek, dupeczka','zgnieść','zmiąć, zgnieść','chrzęst, skrzypienie, kryzys,','pokruszyć, skruszyć','chrupiący',
+'zad','krucjata','krzyżowiec','wojujący','ścisk, zadurzenie, zgnieść','wycisnąć','rozkruszyć',
+'welur gnieciony','przygniatający','druzgocąco','sztywny','skórka, piętka, skorupa,tupet','skorupiak','chrupiący, zrzędliwy',
+'kula (inwalidzka), oparcie, krocze','sedno','krzyk, zapłakać','zlekceważyć','odwołać spotkanie',
+'krzyknąć','płaksa, beksa','płacz, krzyczący','kriobiologia','zamrażanie',
+'krypta','kryptoanaliza','tajemniczy','kryształ','kryształowa szklana kula','kryształowo czysty',
+'wróżenie z kryształowej kuli','sieć krystaliczna','krystaliczny','soczewka oczna','skrystalizować, sprecyzować','kandyzowany','detektor',
+'uzdrawianie kryształami','gaz łzawiący','karat','młode','słupek','kanciapa, pakamera','sześcian, trzecia potęga',
+'pierwiastek trzeciego stopnia','pojemność','kabina','miara objętości','zastęp zuchów',
+'początkujący reporter','rogacz','kukułka','ogórek','pogrążyć się w zadumie',
+'przytulić','milutki, mięciutki, przylepny','przytulanka','pałka','sygnał dla aktora, wskazówka, kij bilardowy, uderzyć (ball)','kula bilardowa','telepromter','mankiet, rękaw, kajdanki, obrączki, trzepnięcie','spinka do mankietu','kuchnia (cooking)','ślepa uliczka','kulinarny','ubój selektywny, odstrzał, przeznaczony na ubój',
+'zakończyć się czymś','rezultat, wynik, kulminacja','spódnica-spodnie','wina, karygodność','winny','umyślne zabójstwo','karygodne zaniedbanie','winowajca','kult, sekta','terapeuta, który pomaga uwolnić się spod wpływu grupy psychomanipulacyjnej','uprawny','odmiana uprawna','hodować, uprawiać','kultywator, hodowca','kulturowo','kultura, wyhodować','charakterystyczny dla danej kultury','kulturalny','perła hodowlana','dający równe szanse osobom z różnych kręgów kulturalnych','pożywka','biegać z jednej imprezy kulturalnej na drugą','przepust',
+'sperma','niezreczny','ciężki, masywny','kminek','z wyróżnieniem','szeroki pas (do stroju wieczorowego)','narastający, kumulacyjny',
+'działanie skojarzone','zbiór dowodów','chmura kłębiasto-deszczowa','chmura kłębiasta','pismo klinowe','cunnilingus (stosunek oralny, w którym stroną aktywną jest mężczyzna','przebiegłość',
+'sprytnie','pizda','filiżanka, puchar, ','cześnik, podczaszy','szafka (kuchenna)',
+'miłość wyrachowana','miejsce w szafach','okrągłe ciasteczko, laska (girl)','szklanka (czegoś)','kupidyn',
+'chciwość','kopuła, latarnia','filiżanka, kubek herbaty','bańka','miedziowy','miedzionikiel',
+'mecz pucharowy','kundel','uleczalny','wikariusz ','uzdrawiający',' kustosz, kurator','ograniczenie, krawężnik, pohamować',
+'obsługa bez wysiadania z samochodu','krawężnik','ciężar własny pojazdu gotowego do jazdy','zsiadłe mleko','twaróg','zsiąść się','wyleczyć',
+'panaceum','łyżeczkowanie','godzina policyjna','kuria','suszenie, solenie, wędzenie',
+'osobliwość','ciekawość','lok, zakręcić','zwinąć w kłębek','lokówka, gracz w curling',
+'kulik','zakrętas','lodowisko do curlingu','lokówka (2)','papilot','kędzierzawy, kręcony, poskręcany',
+'jarmuż','sałata karbowana','zrzędliwy','porzeczka','waluta','elektroniczna tabela kursów walut','prąd, obecny',
+'rachunek bieżący','aktualne wydarzenia','środki obrotowe','zobowiązania bieżące','obecnie','program nauczania','życiorys',
+'wyszczotkować','zgrzebło','przekleństwo','kursywa','pobieżnie',
+'szorstki','ograniczyć','zasłona','wywołanie aktora przed kurtynę','drążek do zasłon',
+'wstęp','dygnięcie, głęboki ukłon','apetycznie zaokrąglony','krzywizna','krzywa, ostry zakręt','krzywoliniowy',
+'o okrągłych kształtach','poduszka','cichy, spokojny, ciepła posadka','ostrze krzywej, róg, koniunkcja','spluwaczka','przekleństwo','krnąbrność',
+'przekleństwo (2)','słodki sos z mleka i jajek z dodatkiem mąki','markiza','tarta z kremem z mleka i jaj','kara pozbawienia wolności','dozorca','areszt',
+'zwyczaj, na zamówienie','tradycyjny, zwyczajowy','klient','pomoc techniczna na telefon','urząd celny, odprawa celna',
+'Urząd Ceł','policja celna','odprawa celna','opłaty celne','urząd celny',
+'komora celna','kontrola celna','celnik/czka','celnik/czka (2)','posterunek celny','służba celna',
+'terminal','cięcie, fryzura, fason','przeciąć','pośpieszyć','rąbać','odciąć','oszczędzić',
+'ograniczyć','wtrącić','zgasnąć, wyłączyć','przeciąć, rozpuścić','skrócić','wygłupiać się','gotowy, rutynowy',
+'szermierka słowna','skórny','aksonometria rozcięta','redukcja','milutki, uroczy',
+'pretensjonalny, wymuskany','szkło rżnięte, wykwintny','skórka','milutkie dziecko, ślicznotka','wytwórca sztućców',
+'sztućce','kotlet','granica, wyłącznik','termin ostateczny','(górna) granica','wyłącznik, wycięty',
+'przeceniony','kuter,nóż do cięcia, krojczy','listwa nożowa','rzezimieszek, okrutny','brzytwa','wycinek, szlifowanie, drążenie','deska do krojenia',
+'tarcza tnąca','ostrze tnące','kąśliwie, uszczypliwie','montażownia','archiwum wycinków prasowych','mątwa','życiorys',
+'barwa niebiesko-zielona','cyjanek','kawiarnia internetowa','obywatel wirtualnego świata','internauta',
+'zagnieżdżenie się dzikiego lokatora na stronie internetowej','molestowanie seksualne za pośrdnictwem Internetu','dokumentalista wirualnego świata','fiołek alpejski','cykl, jeździć rowerem',
+'klamerka, spinacz','egzamin na kartę rowerową','spodenki kolarskie','kolarstwo przełajowe','cyklon','cyklop',
+'odrobina, maźnięcie, musnąć, płastuga','odciski palców','przetrzeć','usunąć','lekko nałożyć, skropić','zmoczyć','bawić się (w coś)',
+'amator','perkoz','kleń','dacza','jamnik','daktyl','tatuś',
+'kosarz','lamperia','obrona terytorialna','Dedal','żonkil',
+'głupawy','głupi, durny','sztylet','obraźliwe określenie południowca','dalia',
+'niższa izba parlamentu Irlandii','z gracją, wdzięcznie','kruchość, delikatność','przysmak, delikatny','mleczarnia','masło śmietankowe',
+'bydło mleczne','śmietana','gospodarstwo mleczne','lody śmietankowe','mleczarka, dojarka','podium','stokrotka',
+'głowica wirująca','dolina','flirt, zaloty','marudzić','zapora, przeklęty, matka','uszkodzenia','łatwy do uszkodzenia',
+'szkodzący','Damaszek','stal damasceńska, bladoróżowy','pani (domu), kobitka','szkółka w domu nauczycielki',
+'głupi, durny','cholera!, psiakrew!','cholerny, przekląć, potępić','godny potępienia','straszliwie, haniebnie',
+'potępienie, cholera jasna!','potępieńcy','zrobić wszystko (dla kogoś)','wilgoć','stłumić','lekko wilgotny',
+'zwilżyć, ostudzić','tłumik, amortyzator','odporny na wilgoć','warstwa izolacyjna przeciwwilgociowa','niewypał','młoda dama, panna','ważka równoskrzydła',
+'śliwka damaszka','(in judo, karate) dan','parkiet','sala taneczna','choreografia','karnet','krok tańca',
+'tańce, [eyes] żywy','łyżeczkowanie w macicy','mniszek lekarski','zdenerwować kogoś','wymuskany',
+'pieścić','łupież','elegant','przeklęty, cholerny','w stanie krytycznym',
+'dodatek za pracę w niebezpiecznych warunkach','sygnał ostrzegawczy','wymachiwać (czymś), kusić, dyndać','ciastko (z owocami lub kruszonką)','wilgotny','Dunaj',
+'Gdańsk','rozwielitka, dafnia','elegancki, wytworny','pokryć cętkami','łaciaty','(horse) jabłkowity','jak dwa gołąbki',
+'odważyć się, ośmielić się','śmiałek, szaleniec','odwaga, śmiałość','mroczny okres','śniady, o ciemnej karnacji','Carny Ląd','przyciemnić',
+'ciemnia','ciemnoskóry','czarnuch','kochanie','cera, zacerować, cholernie',
+'cerowanie','strzałka','błyskawiczny','sprint, myślnik, odrobina, werwa, deska(rozdzielcza), roztrzaskać','deska rozdzielcza',
+'przeklęty','kolorowa, luźna koszula','dziarski, żwawy','podły, nikczemny','dane','gromadzenie danych'];
+
+
+
+
+
+
+
+
+	let licznik=0;
+	let szukany;
+	let wyraz="aba";
+	let zmiennik;
+	const guessSubmit = document.querySelector('.guessSubmit');
+	const guessField = document.querySelector('.guessField');
+	const guesses = document.querySelector('.guesses');
+	const ul2=document.querySelector('ul');
+	const sec=document.querySelector('section');
+	
+	const polski = document.querySelector('.polski');
+	const english = document.querySelector('.english');
+	const buttonpl =document.querySelector('.polski');
+	const buttonen =document.querySelector('.english');
+	let a=0;
+	let v="sam", c,e="";
+	function checkpolski() {
+			   zmiennik=true;
+			   buttonen.style.backgroundColor = "#e7e7e7";
+			   buttonpl.style.backgroundColor = "#ADFF2F";
+		  }
+	
+		  function checkenglish() {
+			   zmiennik=false;
+			   buttonpl.style.backgroundColor = "#e7e7e7";
+          	   buttonen.style.backgroundColor = "#ADFF2F";
+		  }
+	
+	  function checkGuess() {
+		const resetParas = document.querySelectorAll('ul');
+			for (const resetPara of resetParas) {
+			  resetPara.textContent = '';
+			}
+		const userGuess = guessField.value;
+	
+	   
+		  wyraz=userGuess;
+		  let l=0;
+		  let wyrazy=[tabpol.length];
+		for(let i=0;i<tab.length;i++)
+	  {
+			if(zmiennik){
+		  szukany=tabpol[i];
+
+		c=tabpol[i];
+        let f=tabpol[i].length;
+        for(let j=0;j<f;j++){
+        for(let m=j;m<f;m++){
+        e=e+c[m];
+        if(wyraz==e)a++;
+       }
+       e="";
+        }
+      
+        if(a>=1)  
+		   {
+			wyrazy[l++]=(tabpol[i]+"-"+tab[i]+" ");
+			}
+			
+			wyrazy.sort(((a, b) => a.localeCompare(b)));
+		a=0;
+        e="";
+
+
+		 licznik=0;
+		  }
+		  else {szukany=tab[i];
+			c=tab[i];
+        let f=tab[i].length;
+        for(let j=0;j<f;j++){
+        for(let m=j;m<f;m++){
+        e=e+c[m];
+        if(wyraz==e)a++;
+       }
+       e="";
+        }
+
+			/*
+			for(let j=0;j<wyraz.length;j++)
+		  {
+			if(szukany[j]==wyraz[j])
+		  {
+	
+	
+				if(wyraz[j]==szukany[j]) licznik++;
+		  }
+	
+		  if(wyraz[j]!=szukany[j]) licznik--;
+		  }
+		 */
+		   if(a>=1)  
+		   {
+			const para = document.createElement('li');
+			const spa = document.createElement('span');
+			spa.textContent=(tab[i]+"-"+tabpol[i]+" ");
+		   
+			ul2.appendChild(para);
+		  para.appendChild(spa);
+		  
+	
+		   }
+		   licznik=0;
+		   a=0;
+        e="";
+		  
+		  }
+		  
+	  }
+	  if(zmiennik){
+	  
+			
+	  for(let a=0;a<l;a++)
+		   {   
+			const para = document.createElement('li');
+			let spa = document.createElement('span');
+		   spa.textContent=wyrazy[a];
+		   ul2.appendChild(para);
+		   para.appendChild(spa);
+		   }
+		   console.log(l);
+		   l=0;
+		   
+		   
+		  }
+	  }
+	
+	  guessSubmit.addEventListener('click', checkGuess);
+	
+	  polski.addEventListener('click', checkpolski);
+	  english.addEventListener('click', checkenglish);
+	  </script>
+</html>

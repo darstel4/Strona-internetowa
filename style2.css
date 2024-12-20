@@ -1,0 +1,65 @@
+#da{
+	padding-left: 38%;
+padding-right: 41%;
+position: fixed; /* spowodowało że nie ma wolnego miejsca z boku paska */
+padding-top: 0.6%;
+background-color: rgb(194, 231, 26);
+bottom: 0;
+left: 0;
+right: 0;
+width:260px;
+margin-bottom:0%;
+float: left;/* spowodowało że nie ma odstępu u dołu strony */
+}
+.side{
+font-size: 20px;
+
+height: 93.3%; /* Full-height: remove this if you want "auto" height */
+    width: 23%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(148, 166, 190); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+
+}
+.side a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
+    color:black;
+  }
+.side a:hover {
+    color: #f1f1f1;
+  }
+  .side2{
+font-size: 20px;
+
+height: 93.3%; /* Full-height: remove this if you want "auto" height */
+    width: 12%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgb(182, 199, 189); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+button{
+  
+  margin-left: 30px;
+}
+
+.ul{
+  text-align: left ;
+  padding-left: 28%;
+  padding-right: 10%;
+}
+
+.form{
+  padding-left: 28%;
+  padding-right: 10%;
+
+}
