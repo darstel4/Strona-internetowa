@@ -588,7 +588,9 @@ Testy:<br>
 			  resetPara.textContent = '';
 			}
 		const userGuess = guessField.value;
-	
+	if(userGuess.length===1) {spa.textContent = 'Wpisz więcej liter';
+        }
+        else{
 	   
 		  wyraz=userGuess;
 		  let l=0;
@@ -662,6 +664,7 @@ Testy:<br>
 		  }
 		  
 	  }
+	}
 	  if(zmiennik){
 	  
 			
